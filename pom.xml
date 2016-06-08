@@ -1,0 +1,72 @@
+﻿<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>RPM</groupId>
+	<artifactId>homer-compose</artifactId>
+	<packaging>rpm</packaging>
+
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>homer-compose</name>
+	<description>Orquestación con docker compose de plataforma (Homer)</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<build>
+		<plugins>
+
+			<!--
+				En último lugar formamos el RPM.
+			-->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>rpm-maven-plugin</artifactId>
+				<version>2.1.5</version>
+				<extensions>true</extensions>
+				<configuration>
+                    <group>ondevio/homer</group>
+                    <packager>ondevio</packager>
+                    <copyright>2016, ondevio</copyright>
+                    <distribution>CentOS 7</distribution>
+                    <needarch>noarch</needarch>
+                    <defaultUsername>root</defaultUsername>
+                    <defaultGroupname>root</defaultGroupname>
+					<defaultDirmode>755</defaultDirmode>
+					<defaultFilemode>644</defaultFilemode>
+
+
+					<defineStatements>
+					</defineStatements>
+
+					<mappings>
+						<mapping>
+							<directory>/opt/ondevio</directory>
+						</mapping>
+
+
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>rpm-int</id>
+			<name>rpm-int</name>
+			<url>https://rpm-int.ondevio.com</url>
+		</repository>
+	</distributionManagement>
+
+	<scm>
+		<url>https://github.com/rimomol/pruebaRpm</url>
+		<connection>scm:git:https://github.com/rimomol/pruebaRpm.git</connection>
+		<developerConnection>scm:git:https://github.com/rimomol/pruebaRpm.git</developerConnection>
+	</scm>
+</project>
