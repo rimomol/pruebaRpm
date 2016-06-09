@@ -82,6 +82,11 @@
 			<name>rpm-int</name>
 			<url>https://rpm-int.ondevio.com</url>
 		</repository>
+		<snapshotRepository>
+			<id>rpm-snapshot</id>
+			<name>rpm-snapshot</name>
+			<url>https://rpm-snapshot.ondevio.com</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
