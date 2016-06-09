@@ -6,7 +6,7 @@
 	<artifactId>homer-compose</artifactId>
 	<packaging>rpm</packaging>
 
-	<version>3.0.0-000046</version>
+	<version>4.0.0-000050</version>
 
 	<name>homer-compose</name>
 	<description>Orquestación con docker compose de plataforma (Homer)</description>
@@ -82,6 +82,11 @@
 			<name>rpm-int</name>
 			<url>https://rpm-int.ondevio.com</url>
 		</repository>
+		<snapshotRepository>
+			<id>rpm-snapshot</id>
+			<name>rpm-snapshot</name>
+			<url>https://rpm-snapshot.ondevio.com</url>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<scm>
