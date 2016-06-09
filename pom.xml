@@ -6,7 +6,7 @@
 	<artifactId>homer-compose</artifactId>
 	<packaging>rpm</packaging>
 
-	<version>3.0.0-SNAPSHOT</version>
+	<version>3.1.0-SNAPSHOT</version>
 
 	<name>homer-compose</name>
 	<description>Orquestación con docker compose de plataforma (Homer)</description>
