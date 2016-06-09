@@ -49,7 +49,7 @@
 						<mapping>
 							<directory>/opt/ondevio</directory>
 						</mapping>
-
+					</mappings>
 
 				</configuration>
 			</plugin>
