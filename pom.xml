@@ -6,6 +6,7 @@
 	<artifactId>homer-compose</artifactId>
 	<packaging>rpm</packaging>
 
+
 	<version>5.0.0-SNAPSHOT</version>
 
 	<name>homer-compose</name>
