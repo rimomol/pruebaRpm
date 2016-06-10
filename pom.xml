@@ -51,7 +51,7 @@
 				<version>2.1.5</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <group>ondevio/homer</group>
+				<group>ondevio/homer</group>
                     <packager>ondevio</packager>
                     <copyright>2016, ondevio</copyright>
                     <distribution>CentOS 7</distribution>
