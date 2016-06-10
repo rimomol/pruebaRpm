@@ -52,7 +52,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<group>ondevio/homer</group>
-                    <packager>ondevio</packager>
+				<packager>ondevio</packager>
                     <copyright>2016, ondevio</copyright>
                     <distribution>CentOS 7</distribution>
                     <needarch>noarch</needarch>
